@@ -17,6 +17,7 @@
 #define BS(X) BT_SEL X
 
 
+// Tapping term for mod-tap
 &mt {
     tapping-term-ms = <150>;
 };
