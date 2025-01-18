@@ -22,6 +22,10 @@
     tapping-term-ms = <150>;
 };
 
+&soft_off {
+    hold-time-ms = <3000>;
+};
+
 / {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
@@ -79,7 +83,7 @@
                 adjust_layer {
                         bindings = <
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     &trans &bt BS(0) &bt BS(1) &bt BS(2) &bt BS(3) &bt BS(4)                 &kp HOME &kp PGDN &kp PGUP  &kp END    &none  &kp DEL
+  &soft_off &bt BS(0) &bt BS(1) &bt BS(2) &bt BS(3) &bt BS(4)                 &kp HOME &kp PGDN &kp PGUP  &kp END    &none  &kp DEL
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
      &trans    &none    &none    &none    &none &bt BT_CLR                    &kp LEFT &kp DOWN   &kp UP &kp RIGHT   &none    &none
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
